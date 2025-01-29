@@ -3,77 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronic Tech Company</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home - ChronicTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://kit.fontawesome.com/3d9dc13736.js"
+    crossorigin="anonymous"
+  ></script>
+  
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img style="height: 100%; width: 100%;" src="Image/ChronTech Logo.jpg" alt="Chronic Tech Logo">
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        <img src="Image/ChronTech Logo.jpg" alt="SKM Construction Logo"> <!-- Logo Image -->
+        <h1>Welcome to ChronicTech Solutions.</h1>
+        <p>Innovating the Future, One Solution at a Time</p>
     </header>
+   
+    <nav>
+        <i id="menu-icon" onclick="toggleMenu()" class="fa fa-bars"></i>
+        <i id="close-icon" onclick="toggleMenu()" class="fa fa-times" style="display: none;"></i> 
+        
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="Blog">Blog/News</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to ChronicTech Company</h1>
-            <h2>Innovating the Future, One Solution at a Time</h2>
-            <p>Providing top-notch web development, IT solutions, and digital innovation.</p><br>
-            <a href="contact.html" class="btn">Get More Information</a>
-        </div>
-    </section>
+    <div class="slideshow-container">
+        <img class="mySlides" src="Image/BG 5.jpg" alt="Project 1">
+        <img class="mySlides" src="Image/Home background.jpg!sw800" alt="Project 2">
+        <img class="mySlides" src="Image/BG 6.jpg" alt="Project 3">
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div>
-                <img src="Image/ChronTech Logo.jpg" alt="Chronic Tech Logo" class="footer-logo">
-                <p class="footer-cont">
-                    Email: hamiltonoriginal440@gmail.com <br>
-                    Phone: +233533057544 <br>
-                    Address: Spintex Hydroform Estate <br> Accra/Ghana
+    <section class="home-sec">
+        <h2>Who We Are</h2>
+        <p>
+
+
+            ChronicTech Company is a dynamic and innovative technology firm dedicated to providing cutting-edge web development, graphic design, and IT solutions. Established in 2021, our mission is to empower businesses and individuals with high-quality, customized digital solutions that drive growth and efficiency.  
+            With a team of passionate developers, designers, and IT experts, we specialize in building professional websites, designing compelling brand identities, and offering tailored software solutions that meet the evolving needs of our clients.  
+            At ChronicTech, we believe in innovation, excellence, and customer satisfaction. Our commitment is to deliver state-of-the-art technology that enhances productivity, improves digital presence, and helps businesses thrive in the modern world.  
+            🚀 **Innovate. Build. Transform.** Welcome to ChronicTech Company!
+        </p>
+        <div class="info-section">
+            <div class="info-box">
+                <i class="fas fa-flag"></i>
+                <h3> Our Mission</h3>
+                <p>
+                    🎯 Mission
+                    Our mission is to deliver high-quality, scalable, and innovative digital solutions tailored to meet the unique needs of our clients. 
+                    Through creativity, technology, and strategic 
+                    planning, we aim to enhance business growth, optimize processes, and create impactful digital experiences.
                 </p>
             </div>
-            
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-           
+            <div class="info-box">
+                <i class="fas fa-eye"></i>
+                <h3> Our Vision</h3>
+                <p>
+                    🌍 Vision
+                    At ChronicTech Company, our team values innovation, excellence, integrity, customer satisfaction, and collaboration. We embrace creativity and cutting-edge 
+                    technology to deliver top-quality solutions with transparency and professionalism. Our client-centric approach ensures tailored digital experiences, while teamwork drives continuous growth and success. 🚀.
+                </p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-star"></i>
+                <h3> Our Values</h3>
+                <p>
+                    At ChronicTech Company, our core values are innovation, excellence, integrity, customer-centricity, and collaboration. 
+                    We strive to create cutting-edge solutions, uphold the highest quality standards, operate with transparency, prioritize 
+                    client needs, and foster teamwork to drive success. 🚀
+                </p>
+            </div>
         </div>
-        <p class="copyright">&copy; 2025 Chronic Tech Company | All Rights Reserved</p>
+    </section>
+    <!-- the our Team -->
+   
+ 
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <img src="Image/ChronTech Logo.jpg" alt="SKM Construction Logo" style="height: 50px;"> <!-- Company Logo -->
+                <p><strong>Contact Us:</strong></p>
+                <p>Email: <a href="hamiltonoriginal440@gmail.com" style="color: white;">hamiltonoriginal440@gmail.com</a></p>
+                <p>Phone: +233533057544 / +233257409566</p>
+                <p>Address: Spintex, Hydroform Estate, Accra, Ghana</p>
+            </div>
+            
+            <div class="footer-info">
+                <ul>
+                    <li ><a href="home.html" style="color: white;">Home</a></li>
+                    <li ><a href="about.html" style="color: white;">About</a></li>
+                    <li ><a href="services.html" style="color: white;">Services</a></li>
+                    <li ><a href="Portfolio.html" style="color: white;">Portfolio</a></li>
+                    <li ><a href="contact.html" style="color: white;">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-info" style="background-color: #000;">
+                <h4 style="color: white;">ChronicTech Solutions - FAQs</h4>
+                <div class="faq-section">
+                    <details style="margin-bottom: 10px;">
+                        <summary style="cursor: pointer; color: white;">Q: What services does ChronicTech Solutions offer?</summary>
+                        <p>A: ChronicTech Solutions provides web development, graphic design, IT consulting, and custom software solutions tailored to business needs.</p>
+                    </details>
+                    <details style="margin-bottom: 10px;">
+                        <summary style="cursor: pointer; color: white;">Q: How can I contact ChronicTech Solutions?</summary>
+                        <p>A: You can reach us via email at <a href="mailto:info@chronictech.com" style="color: white;">info@chronictech.com</a> or call us at +233-533-057-544.</p>
+                    </details>
+                    <details style="margin-bottom: 10px;">
+                        <summary style="cursor: pointer; color: white;">Q: Where is ChronicTech Solutions located?</summary>
+                        <p>A: Our headquarters is located at Spintex, Hydroform Estate, Accra, Ghana.</p>
+                    </details>
+                </div>
+            </div>
+            
+        </div>
+        <p style="text-align: center; padding: 10px; background-color: #000; color: white;">© 2025 Chronic Tech Company | All Rights Reserved</p>
     </footer>
 
     <script>
+        // Slideshow functionality
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+       
         function toggleMenu() {
-            var nav = document.getElementById("navLinks");
-            nav.classList.toggle("active");
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show'); 
         }
     </script>
+    
 </body>
 </html>

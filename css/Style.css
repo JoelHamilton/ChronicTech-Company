@@ -1,0 +1,256 @@
+/* ---GENERAL PAGE STYLING */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    text-decoration:none;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #000; /* Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header img {
+    height: 50px; /* Logo height */
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    background-color: rgb(2, 2, 71); 
+    text-align: center;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0 2em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 8vh;
+    align-items: center;
+   
+}
+nav ul li {
+    margin: 0 10px;
+    
+    
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    padding: 0, 1em;
+    font-size: 24px;
+}
+nav ul li a:hover {
+    background-color: rgb(1, 1, 61);
+    color: #fff; 
+    box-shadow: 0px 6px 9px 0px;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-bars{
+     display:none;
+}
+
+footer {
+    background-color: #000; 
+    color: white;
+    text-align: center;
+    padding:80px 0;
+}
+
+
+.footer-info img {
+    border-radius:50px;
+}
+
+.footer-info{
+    line-height:1.6;
+    background-color: #000;
+}
+
+.footer-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+ }
+
+.footer-info ul{
+    list-style:none;
+}
+
+.footer-info ul li{
+     margin:20px 0;
+}
+
+
+
+
+.faq-section {
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.faq-section h4 {
+    margin-bottom: 10px;
+}
+.faq-section p {
+    margin: 5px 0;
+}
+
+
+
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    nav {
+      padding: 20px 0;
+      position: relative;
+    }
+  
+    .fa-bars, .fa-times {
+      color: #fff;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size:27px;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      display: none;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgb(2, 2, 71); 
+      position: absolute;
+      top: 38px;
+      left: -30px;
+      z-index: 10;
+      height:60vh;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+      padding: 15px 0;
+      width: 100%;
+    }
+  
+    .slideshow-container {
+      margin-top: 50px; 
+    }
+  }
+  
+
+/*  HOME PAGE STYLING*/
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 60vh;
+}
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.home-sec {
+    padding: 40px;
+    text-align: center;
+    background-image: url(../photo/abstract-watercolor-pastel-background_87374-139.avif);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.home-sec h2{
+     margin-bottom:20px;
+}
+
+.home-sec p{
+    max-width:700px;
+    margin:30px auto;
+    line-height:1.5;
+}
+
+
+
+
+.info-section {
+   display:grid;
+   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+   gap:20px;
+}
+
+
+.info-box {
+    background-color: rgb(2, 2, 71); 
+    color: white;
+    padding:40px;
+    border-radius:10px;
+}
+
+.info-box i{
+     margin-bottom:20px;
+     font-size:22px;
+     width:70px;
+     height:70px;
+     background:#fff;
+     border-radius:50%;
+     text-align:center;
+     padding:20px 0;
+     color:#e63946;
+}
+
+
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+   
