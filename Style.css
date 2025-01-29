@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+}
+.navbar .logo{
+    height: 16vh;
+    width: 16%;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav-links li a:hover{
+    background-color: blue;
+    box-sizing: border-box;
+    box-shadow: 0px 9px 6px 0px;
+    outline-style: double;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Image/BG\ 5.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+.hero-content h2{
+    font-size: 2.0em;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-logo {
+    width: 150px;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+.footer-cont{
+    font-size: 18px;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-links li a {
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+.footer-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-decoration: none;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.copyright{
+    font-size: 24px;
+    color: red;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        position: absolute;
+        color: #fff;
+        top: 50px;
+        right: 0;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content h2{
+        font-size: 1.5em;
+    }
+}
